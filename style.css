@@ -1,0 +1,95 @@
+html {
+ box-sizing: border-box;
+ font-family: "helvetica neue";
+ font-weight: 50px;
+ font-size: 10px;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-image:url(https://i.picsum.photos/id/163/2000/1333.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.order-container {
+  background: white;
+  max-width: 350px,
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0 10px;rgba(0,0,0,0.1);
+}
+
+h4 {
+  text-align: center;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+ol {
+  margin: 10px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+}
+
+/*
+.items input {
+  display: none;
+}  */
+
+.items input + label::before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+
+.items input:checked + label::before {
+  content: "🍔";
+}
+
+
+.add-items {
+    padding: 0 10px;
+    width: 250px;
+}
+
+.add-items input {
+  padding: 5px;
+  outline: 0;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.remove-button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px:
+}
+
+.check-button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px:
+}
